@@ -1,6 +1,6 @@
 scene({ beats: [
   { say: 'So, just make the window bigger?', draw: p => {
-      write('Just make it bigger?', 60, 85, p, { size: 52, color: C.yellow });
+      title('Just make it bigger?', p);
   } },
   { say: 'Say, a million tokens.', draw: p => {
       write('1,000,000 tokens', 640, 165, seg(p, 0, .3), { size: 30, color: C.blue, center: true });
@@ -19,7 +19,7 @@ scene({ beats: [
       write('and still costly', 640, 610, p, { size: 32, color: C.orange, center: true });
   } },
   { clear: true, say: 'The fix: keep memory outside the model.', draw: p => {
-      write('The fix: memory outside', 60, 85, seg(p, 0, .5), { size: 52, color: C.yellow });
+      title('The fix: memory outside', seg(p, 0, .5));
       stroke(box(90, 260, 300, 170), seg(p, .5, .8), { color: C.green });
       write('Memory store', 240, 355, seg(p, .8, 1), { size: 34, color: C.green, center: true });
   } },

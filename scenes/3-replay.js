@@ -5,7 +5,7 @@ const bar = (i, p) => {
 };
 scene({ beats: [
   { say: 'Replaying the whole chat does not scale.', draw: p => {
-      write("Replay doesn't scale", 60, 85, seg(p, 0, .8), { size: 52, color: C.yellow });
+      title("Replay doesn't scale", seg(p, 0, .8));
       stroke(line([90, BASE], [580, BASE]), seg(p, .8, 1), { color: C.white, width: 3 });
   } },
   { say: 'Every turn resends all the earlier turns.', draw: p => {

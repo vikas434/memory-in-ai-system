@@ -1,6 +1,6 @@
 scene({ beats: [
   { say: 'So why does it seem to remember?', draw: p => {
-      write('The illusion of memory', 60, 85, seg(p, 0, .85), { size: 52, color: C.yellow });
+      title('The illusion of memory', seg(p, 0, .85));
       stroke(line([640, 130], [640, 610]), seg(p, .85, 1), { color: C.white, width: 2 });
   } },
   { say: 'In session one, you say, my name is Vikas.', draw: p => {

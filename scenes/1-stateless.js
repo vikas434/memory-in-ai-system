@@ -1,7 +1,6 @@
 scene({ beats: [
   { say: 'Why does an AI forget you?', draw: p => {
-      write('Why does an AI forget you?', 60, 85, seg(p, 0, .85), { size: 52, color: C.yellow });
-      stroke(curve([58, 104], [700, 102], [380, 112]), seg(p, .85, 1), { color: C.yellow, width: 4 });
+      title('Why does an AI forget you?', seg(p, 0, .85));
   } },
   { say: 'A language model is like a pure function.', draw: p => {
       stroke(box(530, 280, 220, 160), seg(p, 0, .5), { color: C.blue });

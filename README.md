@@ -10,8 +10,8 @@ A growing explainer on how memory works in AI systems, built from handwritten le
 |---|---|
 | `index.html` | The explainer page. One section per concept; it grows as notes are added. |
 | `raw/YYYY-MM-DD/` | Raw notes by the date they were pushed: the original handwritten PDF and a typed `notes.md`. |
-| `assets/gifs/` | Chalk-board animations used in the page. |
-| `scenes/` | Source for each animation, rendered with [khan-explainer](https://github.com/haiderfarooq3/khan-explainer). |
+| `assets/gifs/` | Hand-drawn notebook-style animations used in the page. |
+| `scenes/` | Source for each animation, rendered in the explain-by-hand style (built on [khan-explainer](https://github.com/haiderfarooq3/khan-explainer), MIT). |
 
 ## Chapters so far
 
